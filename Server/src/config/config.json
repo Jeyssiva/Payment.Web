@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "paychat",
+    "host": "localhost",
+    "dialect": "postgres",
+    "seederStorage": "json",
+    "seederStoragePath": "sequelizeSeedData.json",
+    "seederStorageTableName": "sequelize_seed_data"
+  },
+  "test": {
+    "username": "postgres",
+    "password": null,
+    "database": "paychat",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": null,
+    "database": "paychat",
+    "host": "localhost",
+    "dialect": "postgres"
+  }
+}

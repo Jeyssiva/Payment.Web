@@ -1,0 +1,123 @@
+html, body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-container{
+    width: 100%;
+    top: 0;
+    height: 100vh;
+
+    .left-side{
+
+        width: 220px;
+        max-width: 220px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        //height: 100vh;
+        z-index: 10000;
+        transition: 0.6s all;
+        @media (max-width: 993px) {
+            background-color: rgba(0, 0, 0, 0.85);
+            left: -220px;
+            //opacity: 0;
+            height: 100vh;
+        }
+        overflow: hidden;
+        &-visible{
+            left: 0;
+            opacity: 1 !important;
+        }
+
+    }
+
+    .content-side{
+
+        margin-left: 220px;
+        margin-right: 340px;
+        margin-top: 60px;
+        position: relative;
+
+
+        @media (max-width: 1200px) {
+            margin-right: 0;
+        }
+        @media (max-width: 993px) {
+            margin-left: 0;
+        }
+    }
+
+    .right-side{
+
+        width: 340px;
+        position: fixed;
+        top: 0;
+        right: 20px;
+        //height: 100vh;
+        padding-right: 0px;
+        z-index: 999;
+        transition: 0.6s all;
+        overflow: hidden;
+        padding-left: 10px;
+        @media (max-width: 1200px) {
+            background-color: rgba(0, 0, 0, 0.85);
+
+            right: -340px;
+            padding-top: 25px;
+            height: 100vh;
+
+
+        }
+
+
+        &-visible{
+            right: 0;
+        }
+        .navbar-icons{
+            padding-left: 30px;
+        }
+        &-close{
+            position: absolute;
+            top: 5px;
+            left: 15px;
+            font-size: 24px;
+        }
+
+    }
+
+    .search-bar{
+        &-wrapper{
+
+            position: fixed;
+            top: 0;
+            left: -20px;
+
+            padding-left: 240px;
+            width: 100%;
+            z-index: 100;
+            padding-right: 360px;
+            background: #151515;
+
+            @media (max-width: 1200px) {
+                padding-right: 0;
+            }
+            @media (max-width: 993px) {
+                padding-left: 20px;
+            }
+        }
+
+        z-index: 9999;
+
+    }
+
+    .footer-links{
+        > *{
+            margin-right: 12px;
+        }
+    }
+
+}
+
+.navbar-icon{
+    font-size: 16px;
+}

@@ -1,0 +1,27 @@
+[{
+    "url": "#",
+    "childs": [{
+        "url" : "Mobile",
+        "childs" : [],
+        "slug" : "mobile"
+    }],
+    "name": "Payment and Recharge",
+    "slug": "payment"
+},
+{
+ "url": "#",
+    "childs": [{
+        "url" : "Bus",
+        "childs" : [],
+        "slug" : "bus"
+    },
+    {
+        "url" : "Train",
+        "childs" : [],
+        "slug" : "train"
+    }
+],
+    "name": "Travel",
+    "slug": "travel"
+
+}]

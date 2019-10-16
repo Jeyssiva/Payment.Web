@@ -1,0 +1,69 @@
+{
+  "name": "paychat",
+  "version": "1.0.0",
+  "description": "pay and chat through online",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1",
+    "clean": "npm run test:clean && npm run build:clean",
+    "eslint:fix": "eslint -- . --ignore-path .gitignore --fix",
+    "lint": "npm run lint:js",
+    "lint:eslint": "eslint --ignore-path .gitignore",
+    "lint:js": "npm run lint:eslint -- . ",
+    "start": "webpack-dev-server --open --config config/webpack.dev.js",
+    "build": "webpack --config config/webpack.prod.js"
+  },
+  "author": "Jeya",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-decorators": "^7.6.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-arrow-functions": "^7.2.0",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-loader": "7",
+    "babel-plugin-react-transform": "^3.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "circular-dependency-plugin": "^5.2.0",
+    "css-loader": "^3.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "install": "^0.13.0",
+    "node-sass": "^4.12.0",
+    "npm": "^6.11.3",
+    "reactstrap": "^8.0.1",
+    "redux-devtools-extension": "^2.13.8",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "terser-webpack-plugin": "^2.1.2",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "classnames": "^2.2.6",
+    "fs-extra": "^8.1.0",
+    "immutable": "^4.0.0-rc.12",
+    "lodash": "^4.17.15",
+    "react": "^16.9.0",
+    "react-charts": "^2.0.0-beta.4",
+    "react-dom": "^16.9.0",
+    "react-google-charts": "^3.0.15",
+    "react-router-dom": "^5.1.2",
+    "mobx": "^5.14.0",
+    "mobx-react": "^6.1.4"
+  },
+  "resolutions": {
+    "babel-core": "7.0.0-bridge.0"
+  }
+}
